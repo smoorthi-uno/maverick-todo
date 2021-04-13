@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import tasks from './tasks'
-import auth from './auth'
+import tasks from './store-tasks'
+import auth from './store-auth'
 
 Vue.use(Vuex)
 

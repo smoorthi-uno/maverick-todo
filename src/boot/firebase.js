@@ -3,7 +3,6 @@ import firebase from "firebase/app"
 import "firebase/auth"
 import "firebase/database"
 
-// ADD YOUR FIREBASE CONFIG OBJECT HERE:
 var firebaseConfig = {
   apiKey: "AIzaSyCPyjUrEo-B4HegApA2y5BqkKCHmyG8Rhc",
   authDomain: "maverick-91a14.firebaseapp.com",
