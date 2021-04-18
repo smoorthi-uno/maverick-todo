@@ -16,7 +16,7 @@
           class="absolute-right" />
 
         <q-btn
-          v-else
+          v-if="loggedIn"
           @click="logoutUser"
           to="/auth"
           flat
@@ -37,6 +37,7 @@
           :label="nav.label" />
       </q-tabs>
     </q-footer>
+
     <q-drawer
       v-model="leftDrawerOpen"
       :breakpoint="767"
@@ -74,6 +75,7 @@
 <script>
   import { mapState, mapActions } from 'vuex'
   import { openURL } from 'quasar'
+
   export default {
     name: 'MyLayout',
     data () {
