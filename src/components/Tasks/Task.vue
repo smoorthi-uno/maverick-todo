@@ -6,7 +6,8 @@
     v-ripple>
     <q-item-section side top>
       <q-checkbox 
-        v-model="task.completed" />
+        v-model="task.completed"
+        class="no-pointer-events" />
     </q-item-section>
 
     <q-item-section>
@@ -72,13 +73,13 @@
   import { mapActions } from 'vuex'
 
   export default {
-    
+    props: ['task', 'id'],
     data() {
-  	return {
+  	    return {
     	    showEditTask: false
   	}
     },
-    props: ['task', 'id'],
+
     methods: {
       ...mapActions('tasks', ['updateTask', 'deleteTask']),
       promptToDelete(id) {

@@ -16,7 +16,7 @@
           class="absolute-right" />
 
         <q-btn
-          v-if="loggedIn"
+          v-else
           @click="logoutUser"
           to="/auth"
           flat
@@ -37,7 +37,6 @@
           :label="nav.label" />
       </q-tabs>
     </q-footer>
-
     <q-drawer
       v-model="leftDrawerOpen"
       :breakpoint="767"
