@@ -4,17 +4,20 @@ import "firebase/auth"
 import "firebase/database"
 
 var firebaseConfig = {
-  apiKey: "AIzaSyAczu6EROsCrUzBjVZ3Eem8n8TieXyoPJU",
-  authDomain: "maverick-2df9b.firebaseapp.com",
-  databaseURL: "https://maverick-2df9b-default-rtdb.firebaseio.com",
-  projectId: "maverick-2df9b",
-  storageBucket: "maverick-2df9b.appspot.com",
-  messagingSenderId: "1086402461655",
-  appId: "1:1086402461655:web:a1d0f570423d9b52629592"
+  apiKey: "AIzaSyDPHHVsdDPE_HH3ygWrA11lIxpgIjzCAsE",
+  authDomain: "maverick-d131b.firebaseapp.com",
+  databaseURL: "https://maverick-d131b-default-rtdb.firebaseio.com",
+  projectId: "maverick-d131b",
+  storageBucket: "maverick-d131b.appspot.com",
+  messagingSenderId: "19495247977",
+  appId: "1:19495247977:web:f366a4b77c7f102ff682f8"
 }
 
 let firebaseApp = firebase.initializeApp(firebaseConfig)
 let firebaseAuth = firebaseApp.auth()
 let firebaseDb = firebaseApp.database()
 
-export { firebaseAuth, firebaseDb }
+export {
+  firebaseAuth,
+  firebaseDb
+}
